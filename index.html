@@ -16,6 +16,9 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('grafico').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error al cargar el gráfico:', error);
             });
     </script>
 </body>
